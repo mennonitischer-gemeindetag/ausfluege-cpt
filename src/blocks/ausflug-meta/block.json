@@ -1,0 +1,44 @@
+{
+    "title": "Ausflug Meta",
+    "icon": "location-alt",
+    "description": "Ausflug Meta.",
+    "category": "widgets",
+    "attributes": {
+        "nr": {
+            "type": "number",
+            "source": "meta",
+            "meta": "nr"
+        },
+        "character": {
+            "type": "string",
+            "source": "meta",
+            "meta": "character"
+        },
+        "startZeit": {
+            "type": "string",
+            "source": "meta",
+            "meta": "startZeit"
+        },
+        "endZeit": {
+            "type": "string",
+            "source": "meta",
+            "meta": "endZeit"
+        },
+        "beschraenkt": {
+            "type": "boolean",
+            "source": "meta",
+            "meta": "beschraenkt"
+        },
+        "maxPlaetze": {
+            "type": "number",
+            "default": "40",
+            "source": "meta",
+            "meta": "maxPlaetze"
+        },
+        "preis": {
+            "type": "string",
+            "source": "meta",
+            "meta": "preis"
+        }
+    }
+}

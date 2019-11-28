@@ -1,0 +1,102 @@
+.wp-block-ausfluegecpt-ausfluege {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr;
+  justify-content: stretch;
+  align-content: stretch;
+}
+
+@media (min-width: 800px) {
+  .wp-block-ausfluegecpt-ausfluege {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+  height: 500px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug .ausflug-nummer {
+  height: 50px;
+  width: 50px;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug .ausflug-nummer p {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug .ausflug-leiter {
+  font-size: 1.2em;
+  display: block;
+  color: var(--accent-color);
+  margin: 0;
+  padding-left: 10px;
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug .ausflug-content {
+  box-sizing: border-box;
+  z-index: 1;
+  margin: 1em;
+  min-height: 150px;
+  max-height: 85%;
+  margin-top: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  transition: 0.2s ease-in-out;
+  overflow-y: scroll;
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug:hover .ausflug-content,
+.wp-block-ausfluegecpt-ausfluege .ausflug:focus .ausflug-content {
+  margin-top: 80px;
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: var(--accent-color);
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug footer {
+  color: #bcbcbc;
+  margin-top: 1em;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug .description {
+  transition: 0.2s ease-in-out;
+
+  max-height: 0;
+}
+
+.wp-block-ausfluegecpt-ausfluege .ausflug:hover .description,
+.wp-block-ausfluegecpt-ausfluege .ausflug:focus .description {
+  max-height: 1500px;
+}

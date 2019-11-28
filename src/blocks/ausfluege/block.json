@@ -1,0 +1,17 @@
+{
+    "title": "Ausflüge",
+    "icon": "groups",
+    "description": "Ausflüge",
+    "category": "widgets",
+    "attributes": {
+        "character": {
+            "type": "string"
+        }
+    },
+    "supports": {
+        "align": [
+            "wide",
+            "full"
+        ]
+    }
+}
