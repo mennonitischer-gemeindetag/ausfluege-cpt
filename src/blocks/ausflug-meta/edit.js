@@ -3,7 +3,8 @@ import {
   TimePicker,
   CheckboxControl,
   TextControl,
-  RangeControl
+  RangeControl,
+  ToggleControl
 } from "@wordpress/components";
 
 export default props => {
@@ -15,7 +16,8 @@ export default props => {
       preis,
       beschraenkt,
       maxPlaetze,
-      character
+      character,
+      registrationClosed
     },
     className,
     setAttributes
@@ -68,6 +70,11 @@ export default props => {
           max={200}
         />
       )}
+      <ToggleControl 
+          label="Registration Closed"
+          checked={ registrationClosed }
+          onChange={ ( newValue ) => setAttributes( { registrationClosed: newValue } ) }
+        />
     </div>
   );
 };

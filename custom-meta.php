@@ -32,3 +32,4 @@ register_post_meta( 'ausfluege', 'endZeit', $string );
 register_post_meta( 'ausfluege', 'maxPlaetze', $number );
 register_post_meta( 'ausfluege', 'beschraenkt', $boolean );
 register_post_meta( 'ausfluege', 'preis', $number );
+register_post_meta( 'ausfluege', 'registrationClosed', $boolean );

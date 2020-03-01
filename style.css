@@ -31,7 +31,7 @@
 .wp-block-ausfluegecpt-ausfluege .ausflug .ausflug-nummer {
   height: 50px;
   width: 50px;
-  background-color: var(--accent-color);
+  background-color: var(--c-accent);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@
 .wp-block-ausfluegecpt-ausfluege .ausflug .ausflug-leiter {
   font-size: 1.2em;
   display: block;
-  color: var(--accent-color);
+  color: var(--c-accent);
   margin: 0;
   padding-left: 10px;
 }
@@ -78,7 +78,7 @@
 .wp-block-ausfluegecpt-ausfluege .ausflug h2 {
   margin-top: 0;
   font-size: 1.8em;
-  color: var(--accent-color);
+  color: var(--c-accent);
 }
 
 .wp-block-ausfluegecpt-ausfluege .ausflug footer {
