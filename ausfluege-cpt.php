@@ -34,7 +34,7 @@ function custom_post_type_ausfluege() {
 		'labels'                => $labels,
 		'description'           => __( 'Ausflüge', 'gemeindetag' ),
 		'menu_icon'             => 'dashicons-location-alt',
-		'supports'              => [ 'title', 'editor', 'thumbnail', 'meta', 'custom-fields'],
+		'supports'              => [ 'title', 'editor', 'thumbnail', 'meta', 'custom-fields' ],
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -51,9 +51,10 @@ function custom_post_type_ausfluege() {
 		'rest_base'             => 'ausfluege',
 		'rest_controller_class' => 'WP_REST_Posts_Controller',
 		'template'              => [
-			[ 'core/paragraph', [ 'placeholder' => 'Beschreibung des Ausflüge...', ] ],
+			[ 'core/paragraph', [ 'placeholder' => 'Beschreibung des Ausflüge...' ] ],
 			[ 'gemeindetag/ausflug-meta', [] ],
 			[ 'gemeindetag/anmeldungen', [] ],
+			[ 'gemeindetag/send-email', [] ],
 		],
 		'template_lock'         => 'all', // or 'insert' to allow moving
 	];

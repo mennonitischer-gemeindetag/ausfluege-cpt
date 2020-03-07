@@ -1,27 +1,34 @@
-<?php 
-namespace gemeindetag\ausfluege;
-//  Exit if accessed directly.
-defined('ABSPATH') || exit;
+<?php
+/**
+ * custom meta
+ *
+ * @package gemeindetage-ausfluege
+ */
 
-$string = [
-    'type' => 'string',
-    'single' => true,
-    'show_in_rest' => true,
+namespace gemeindetag\ausfluege;
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+$string           = [
+	'type'         => 'string',
+	'single'       => true,
+	'show_in_rest' => true,
 ];
-$boolean = [
-    'type' => 'boolean',
-    'single' => true,
-    'show_in_rest' => true,
+$boolean          = [
+	'type'         => 'boolean',
+	'single'       => true,
+	'show_in_rest' => true,
 ];
-$number = [
-    'type' => 'number',
-    'single' => true,
-    'show_in_rest' => true,
+$number           = [
+	'type'         => 'number',
+	'single'       => true,
+	'show_in_rest' => true,
 ];
 $multiple_numbers = [
-    'type' => 'number',
-    'single' => false,
-    'show_in_rest' => true,
+	'type'         => 'number',
+	'single'       => false,
+	'show_in_rest' => true,
 ];
 
 register_post_meta( 'ausfluege', 'nr', $number );

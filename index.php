@@ -6,16 +6,25 @@
  * Author URI: fabian-kaegy.de
  * Version: 1.0.0
  * License: UNLICENSED
+ *
+ * @package gemeindetage-ausfluege
  */
+
 namespace gemeindetag\ausfluege;
 
-//  Exit if accessed directly.
-defined('ABSPATH') || exit;
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
+/**
+ * get plugin directory
+ */
 function _get_plugin_directory() {
 	return __DIR__;
 }
 
+/**
+ * get plugin url
+ */
 function _get_plugin_url() {
 	static $plugin_url;
 
@@ -29,7 +38,7 @@ function _get_plugin_url() {
 /**
  * Initialize the Custom Post Type Projects
  */
-include _get_plugin_directory() . '/enqueue-scripts.php';
-include _get_plugin_directory() . '/ausfluege-cpt.php';
-include _get_plugin_directory() . '/ausfluege.php';
-include _get_plugin_directory() . '/custom-meta.php';
+require _get_plugin_directory() . '/enqueue-scripts.php';
+require _get_plugin_directory() . '/ausfluege-cpt.php';
+require _get_plugin_directory() . '/ausfluege.php';
+require _get_plugin_directory() . '/custom-meta.php';

@@ -1,37 +1,54 @@
-<?php 
+<?php
+/**
+ * template for rendering ausfluege
+ *
+ * @package gemeindetag-ausfluege
+ */
 
 namespace gemeindetag\ausfluege;
 
-//  Exit if accessed directly.
-defined('ABSPATH') || exit;
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
-function gemeindetag_ausfluege_render_callback( $attributes, $content ) {    
-    ob_start();
-    ?> <div class="wp-block-ausfluegecpt-ausfluege"><?php
-    $args = [ 
-        'post_type' => 'ausfluege',
-        'posts_per_page' => 99,
-        "order" => "ASC",
-        'meta_key' => 'character',
-	    'meta_value' => $attributes['character'],
-	    'meta_compare' => '='
-    ];
-    
-    $ausfluege_query = new \WP_Query($args); 
-    if ($ausfluege_query->have_posts()) : while($ausfluege_query->have_posts()) : $ausfluege_query->the_post(); ?> 
-        <?php include _get_plugin_directory() . '/ausflug.php'; ?>
+/**
+ * render ausfluege
+ *
+ * @param Array  $attributes attributes
+ * @param String $content InnerBlocks
+ */
+function gemeindetag_ausfluege_render_callback( $attributes, $content ) {
+	ob_start();
+	?>
+	<div class="wp-block-ausfluegecpt-ausfluege">
+	<?php
+	$args = [
+		'post_type'      => 'ausfluege',
+		'posts_per_page' => 99,
+		'order'          => 'ASC',
+		'meta_key'       => 'character',
+		'meta_value'     => $attributes['character'],
+		'meta_compare'   => '=',
+	];
 
-    <?php endwhile; else : ?>
+	$ausfluege_query = new \WP_Query( $args );
+	if ( $ausfluege_query->have_posts() ) : while ( $ausfluege_query->have_posts() ) : $ausfluege_query->the_post();
+			?>
+			<?php include _get_plugin_directory() . '/ausflug.php'; ?>
 
-        <p>Keine Ausflüge</p>
-    
-    <?php endif; 
-    
-    wp_reset_postdata(); 
+	<?php endwhile; else : ?>
 
-    ?></div><?php
+		<p>Keine Ausflüge</p>
 
-    $data = ob_get_clean();
+		<?php
+	endif;
 
-    return $data;
+	wp_reset_postdata();
+
+	?>
+	</div>
+	<?php
+
+	$data = ob_get_clean();
+
+	return $data;
 }
