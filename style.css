@@ -100,3 +100,14 @@
 .wp-block-ausfluegecpt-ausfluege .ausflug:focus .description {
   max-height: 1500px;
 }
+
+.wp-block-ausfluegecpt-ausfluege .ausflug .registration-closed {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--c-warnung);
+  color: white;
+  border-radius: 8px;
+  padding: 2px 10px;
+  margin: 0;
+}
