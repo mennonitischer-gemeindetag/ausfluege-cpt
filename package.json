@@ -1,7 +1,7 @@
 {
-  "name": "events",
+  "name": "ausfluege-cpt",
   "version": "1.0.0",
-  "description": "WordPress Plugin that creates different Gutenberg Blocks that work in conjuncton with the fabiankaegy Theme.",
+  "description": "Manage Ausfluege through a Custom Post Type.",
   "main": "src/index.js",
   "scripts": {
     "start": "wp-scripts start src/index.js src/frontend.js",
@@ -16,17 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://fabiankaegy@github.com/fabiankaegy/Gemeindetage-Ausfluege-Cpt.git"
+    "url": "git+https://github.com/mennonitischer-gemeindetag/ausfluege-cpt.git"
   },
-  "author": "fabiankaegy.info",
+  "author": "Fabian Kägy",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/fabiankaegy/Gemeindetage-Ausfluege-Cpt/issues"
+    "url": "https://github.com/mennonitischer-gemeindetag/ausfluege-cpt/issues"
   },
-  "homepage": "https://github.com/fabiankaegy/Gemeindetage-Ausfluege-Cpt#readme",
-  "devDependencies": {
-    "@wordpress/eslint-plugin": "^3.1.0",
-    "@wordpress/scripts": "^5.1.0"
-  },
-  "dependencies": {}
+  "homepage": "https://github.com/mennonitischer-gemeindetag/ausfluege-cpt#readme",
+  "dependencies": {
+    "@wordpress/scripts": "^22.4.0"
+  }
 }

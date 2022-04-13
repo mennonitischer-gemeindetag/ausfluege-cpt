@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Ausfluege Custom Post Type
- * Description: WordPress CPT Ausfluege.
+ * Plugin Name: Trips
+ * Description: Manage Trips through a Custom Post Type.
  * Author: Fabian Kägy
- * Author URI: fabian-kaegy.de
+ * Author URI: fabian-kaegy.com
  * Version: 1.0.0
- * License: UNLICENSED
+ * License: GLPv2+
  *
  * @package gemeindetage-ausfluege
  */
