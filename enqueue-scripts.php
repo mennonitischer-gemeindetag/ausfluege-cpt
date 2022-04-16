@@ -57,27 +57,3 @@ function register_block_assets() {
 	);
 
 }
-
-
-add_action( 'init', __NAMESPACE__ . '\enqueue_frontend_assets' );
-
-/**
- * enqueue frontend assets
- */
-function enqueue_frontend_assets() {
-
-	// If in the backend, bail out.
-	if ( is_admin() ) {
-		return;
-	}
-
-	$frontend_path         = '/build/frontend.js';
-	$frontend_dependencies = ( include _get_plugin_directory() . '/build/frontend.asset.php' );
-	wp_enqueue_script(
-		'gemeindetag-ausfluege-blocks-frontend',
-		_get_plugin_url() . $frontend_path,
-		array_merge( $frontend_dependencies['dependencies'], [] ),
-		$frontend_dependencies['version'],
-		false
-	);
-}
