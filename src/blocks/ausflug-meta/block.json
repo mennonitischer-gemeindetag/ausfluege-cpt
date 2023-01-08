@@ -1,5 +1,7 @@
 {
+	"apiVersion": 1,
     "title": "Ausflug Meta",
+	"name": "gemeindetag/ausflug-meta",
     "icon": "location-alt",
     "description": "Ausflug Meta.",
     "category": "widgets",
@@ -45,5 +47,6 @@
             "source": "meta",
             "meta": "preis"
         }
-    }
+    },
+	"editorScript": "file:./index.js"
 }

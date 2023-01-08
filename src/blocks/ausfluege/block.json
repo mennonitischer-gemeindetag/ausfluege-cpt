@@ -1,4 +1,6 @@
 {
+	"apiVersion": 1,
+	"name": "gemeindetag/ausfluege",
     "title": "Ausflüge",
     "icon": "groups",
     "description": "Ausflüge",
@@ -13,5 +15,7 @@
             "wide",
             "full"
         ]
-    }
+    },
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
 }
