@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/mennonitischer-gemeindetag/ausfluege-cpt#readme",
   "dependencies": {
-    "@wordpress/scripts": "^22.4.0"
+    "@wordpress/scripts": "^25.1.0"
   }
 }
